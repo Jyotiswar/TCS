@@ -6,8 +6,8 @@ class Solution{
     void charFreq(string str){
         int freq[26];
 
-        for(int i = 0 ; i < str.length()-1;i++){
-            freq[str[i]-'a']++;
+        for(char c : str){
+            freq[c-'a']++;
         }
         for(int i = 0 ;i < 26;i++){
             cout<<(char)('a' + i)<<" -> "<<freq[i]<<"\n";
