@@ -11,7 +11,7 @@ vector<int>sieve(int n){
 
         if(isPrime[i]){
             for(int j = i*i ; j <= n ; j+=i){
-                isPrime[i] = false;
+                isPrime[j] = false;
             }
         }
     }
