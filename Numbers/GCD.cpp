@@ -4,7 +4,7 @@ int gcd(int a, int b){
     while(b!=0){
         int temp = b;
         b =  a % b;
-        temp = a;
+        a = temp;
     }
     return a;
 }
@@ -13,5 +13,4 @@ int main(){
     cout<<"Please Enter a and b"<<endl;
     cin>>a>>b;
     cout<<"GCD is : "<<gcd(a,b);
-    
 }
